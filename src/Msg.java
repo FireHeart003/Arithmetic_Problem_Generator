@@ -262,7 +262,7 @@ public class Msg {
         try {//tries the code and if there is an exception, it will stop error and move on catch
             Integer.parseInt(input);
         } catch (Exception e) {
-            if(input.toLowerCase().equals("exit"))
+            if(input.equalsIgnoreCase("exit"))
             {
                 JOptionPane.showMessageDialog(null, "You have exited the Arithmetic Problem Generator. \n You will be sent back to the real world in 3...");
                 JOptionPane.showMessageDialog(null, "2....");
